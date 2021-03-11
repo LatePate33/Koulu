@@ -19,7 +19,7 @@ class BottleDispenser {
     private static BottleDispenser single_instance = null;
     private int bottles;
     private final ArrayList<Bottle> bottle_array;
-    private double money;
+    private float money;
 
 
     public static BottleDispenser getInstance() {
@@ -38,7 +38,7 @@ class BottleDispenser {
         bottle_array.add(new Bottle("Pepsi Max", "Pepsi", 0.3, 2.2, 1.5, 1));
         bottle_array.add(new Bottle("Coca-Cola Zero", "Coca-Cola", 0.3, 2.0, 0.5, 1));
         bottle_array.add(new Bottle("Coca-Cola Zero", "Coca-Cola", 0.3, 2.5, 1.5, 1));
-        bottle_array.add(new Bottle("Fanta Zero", "Coca-Cola", 0.3, 1.95, 0.5, 4));
+        bottle_array.add(new Bottle("Fanta Zero", "Coca-Cola", 0.3, 1.95, 0.5, 2));
     }
 
     public void addMoney(TextView sana, int i) {
